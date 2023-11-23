@@ -9,6 +9,10 @@ import UIKit
 
 class ProfileViewController: UIViewController {
     override func viewDidLoad() {
+        #if DEBUG
         view.backgroundColor = .systemIndigo
+        #else
+        view.backgroundColor = .systemGray
+        #endif
     }
 }
